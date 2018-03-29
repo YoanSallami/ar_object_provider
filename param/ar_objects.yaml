@@ -1,0 +1,53 @@
+ar_marker_51 :
+  name : "saumon_tape"
+  mesh : "objects/saumon_tape.blend"
+  scale : 3.0
+
+ar_marker_53 :
+  name : "green_tape"
+  mesh : "objects/green_tape.blend"
+  scale : 3.0
+
+ar_marker_12 :
+  name : "pink-trashbin"
+  mesh : "objects/pink_trashbin.dae"
+  scale : 1.0
+
+ar_marker_24 :
+  name : "green-trashbin"
+  mesh : "objects/green_trashbin.dae"
+  scale : 1.0
+
+ar_marker_11 :
+  name : "blue_trashbin"
+  mesh : "objects/blue_trashbin.dae"
+
+ar_marker_31 :
+  name : "red_cube-1"
+  mesh : "objects/red_cube.3ds"
+  scale : 1.0
+
+ar_marker_66 :
+  name : "red_cube-2"
+  mesh : "objects/red_cube.3ds"
+  scale : 1.0
+
+ar_marker_60 :
+  name : "green_cube-1"
+  mesh : "objects/green_cube.3ds"
+  scale : 1.0
+
+ar_marker_25 :
+  name : "green_cube-2"
+  mesh : "objects/green_cube.3ds"
+  scale : 1.0
+
+ar_marker_72 :
+  name : "blue_cube-1"
+  mesh : "objects/blue_cube.3ds"
+  scale : 1.0
+
+ar_marker_7 :
+  name : "blue_cube-2"
+  mesh : "objects/blue_cube.3ds"
+  scale : 1.0

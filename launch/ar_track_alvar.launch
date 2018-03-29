@@ -1,0 +1,15 @@
+<launch>
+
+    <arg name="marker_size" default="4.7" />
+	<arg name="max_new_marker_error" default="0.08" />
+	<arg name="max_track_error" default="0.2" />
+
+	<arg name="cam_image_topic" default="/naoqi_driver_node/camera/front/image_color" />
+	<arg name="cam_info_topic" default="/naoqi_driver_node/camera/front/camera_info" />
+
+	<arg name="output_frame" default="/CameraTop_optical_frame"/>
+	<arg name="bundle_files" default="$(find laas_models)/tags/lotr_tape.xml $(find laas_models)/tags/black_cube.xml $(find laas_models)/tags/blue_cube.xml $(find laas_models)/tags/blue_trashbin.xml $(find laas_models)/tags/green_trashbin.xml $(find laas_models)/tags/pink_trashbin.xml $(find laas_models)/tags/calibration_sight.xml $(find laas_models)/tags/table_desk.xml $(find laas_models)/tags/dark_low_table.xml $(find laas_models)/tags/light_low_table.xml $(find laas_models)/tags/green_cube.xml $(find laas_models)/tags/green_cube2.xml $(find laas_models)/tags/grey_tape.xml $(find laas_models)/tags/wall_e_tape.xml $(find laas_models)/tags/red_cube.xml $(find laas_models)/tags/red_cube2.xml" />
+
+    <node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
+
+</launch>

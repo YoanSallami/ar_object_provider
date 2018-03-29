@@ -1,0 +1,12 @@
+<launch>
+
+ <include file="$(find ar_object_provider)/launch/ar_track_alvar.launch">
+        <arg name="cam_image_topic" value="/naoqi_driver_node/camera/front/image_color" />
+        <arg name="cam_info_topic" value="/naoqi_driver_node/camera/front/camera_info" />
+        <arg name="output_frame" default="/CameraTop_optical_frame"/>
+ </include>
+
+<node pkg="ar_object_provider" type="ar_object_provider_node.py" name="ar_object_provider"
+    args="base base $(find ar_object_provider)/param/ar_objects.yaml $(find laas_models)/models/" output="screen"/>
+
+</launch>
